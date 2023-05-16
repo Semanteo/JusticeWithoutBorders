@@ -1,0 +1,21 @@
+body {
+    background-color: black; 
+    color: #04F07E;
+    font-family: "special elite";
+    text-align: center;
+    
+  }
+  
+  a:visited{
+    color: #FF0000;
+  }
+  a:hover{
+    color: #FFFFFF;
+  }
+  ul{
+    text-align: left;
+  }
+  img,iframe,button {
+    border: 1px solid #04F07E ;
+    font-family:"special elite"
+  }
