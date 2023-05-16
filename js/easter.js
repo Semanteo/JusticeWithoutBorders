@@ -2,7 +2,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const  pass = urlParams.get('password')
 
-if(!pass || pass != "easter"){
+if(!pass || pass != "JWB-VIP"){
     document.getElementById("accessde").style.display = "block";
 }
 else {

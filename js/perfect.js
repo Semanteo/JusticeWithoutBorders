@@ -6,7 +6,7 @@ function tnt(){
   document.write("<h1>Error 404. Page not found</h1>");
 }
 function checkPassword(){
-  var password = "simsim";
+  var password = "CIAISFAKE";
   var input = document.getElementById("password").value;
  if (password!=input){window.alert("Wrong password")}
  else {tnt()}
