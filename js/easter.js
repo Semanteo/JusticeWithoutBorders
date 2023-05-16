@@ -2,11 +2,10 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const  pass = urlParams.get('password')
 
-if(!pass) return;
-
-if(pass != "easter"){
+if(!pass || pass != "easter"){
     document.getElementById("accessde").style.display = "block";
 }
 else {
-    window.location.href = "/perfect.html";
+    win = window.location.href.split("/")
+    window.location.href = window.location.href.replace(win[win.length-1], "perfect.html")
 }
