@@ -34,6 +34,13 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/wordle.css">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -64,7 +71,7 @@
 					<h3 class="heading">Justice Without Borders</h3>
 					<ul>
 						<li><a href="index.html">News</a></li>
-						<li><a href="games.html">Jeux</a></li>
+                        <li><a href="games.html">Jeux</a></li>
 						<li><a href="notifications.html">Notifications</a></li>
 					</ul>
 				</div>
@@ -91,44 +98,54 @@
 		</div>
 
 	</header>
-	<!--<a href="#" class="fh5co-post-prev"><span><i class="icon-chevron-left"></i> Prev</span></a>
-	<a href="#" class="fh5co-post-next"><span>Next <i class="icon-chevron-right"></i></span></a>-->
-	<!-- END #fh5co-header -->
-	<div class="container-fluid">
+
+    <div class="container-fluid">
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-				<h2 class="fh5co-article-title animate-box">Notifications</h2>
-				<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
-					<div class="row">
-						<p><h1 class="animate-box">Mars 2023</h1></p>
-						<ul class="animate-box">
-  						<li><h3>Publication Article - [ 13 Mars ] <br><a href="exemple2.html" style= "color:#3E12F3;">La menace ou l'emploi d'armes nucléaires</a></h3></li>
-  						<li><h3>Publication Article - [ 6 Mars ] <br><a href="limites.html" style= "color:#3E12F3;">Les limites de la justice internationale</a></h3></li>
-						</ul>
-					</div>
-					<div class="row">
-						<p><h1 class="animate-box">Février 2023</h1></p>
-						<ul class="animate-box">
-  						<li><h3>Publication Article - [ 27 Février ] <br><a href="exemple1.html" style= "color:#3E12F3;">Enfants français en Syrie</a></h3></li>
-						<li><h3>Publication Article - [ 2O Février ] <br><a href="histoire1.html" style= "color:#3E12F3;">L'histoire de la justice internationale</a></h3></li>
-						</ul>
-					</div>
-					<div class="row">
-						<p><h1 class="animate-box">Janvier 2023</h1></p>
-						<ul class="animate-box">
-						<li><h3 style= "color:#FF8C00;">Création Blog - [ 14 Janvier ]</h3></li>
-						<br><br><br><br><br>
-						<h3><a href="easter.html" style= "color:red; font-size: 10%;">CIA ACCESS DON'T CLICK - [ 00 Janvier ]</a></h3>
-						</ul>
-					</div>
+				<h1>Wordle</h1>
+				<div id="game-board">
 
+				</div>
+				<div id="keyboard-cont">
+					<div class="first-row">
+						<button class="keyboard-button">q</button>
+						<button class="keyboard-button">w</button>
+						<button class="keyboard-button">e</button>
+						<button class="keyboard-button">r</button>
+						<button class="keyboard-button">t</button>
+						<button class="keyboard-button">y</button>
+						<button class="keyboard-button">u</button>
+						<button class="keyboard-button">i</button>
+						<button class="keyboard-button">o</button>
+						<button class="keyboard-button">p</button>
+					</div>
+					<div class="second-row">
+						<button class="keyboard-button">a</button>
+						<button class="keyboard-button">s</button>
+						<button class="keyboard-button">d</button>
+						<button class="keyboard-button">f</button>
+						<button class="keyboard-button">g</button>
+						<button class="keyboard-button">h</button>
+						<button class="keyboard-button">j</button>
+						<button class="keyboard-button">k</button>
+						<button class="keyboard-button">l</button>
+					</div>
+					<div class="third-row">
+						<button class="keyboard-button">Del</button>
+						<button class="keyboard-button">z</button>
+						<button class="keyboard-button">x</button>
+						<button class="keyboard-button">c</button>
+						<button class="keyboard-button">v</button>
+						<button class="keyboard-button">b</button>
+						<button class="keyboard-button">n</button>
+						<button class="keyboard-button">m</button>
+						<button class="keyboard-button">Enter</button>
 					</div>
 				</div>
+				
 			</article>
 		</div>
 	</div>
-
-
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -140,6 +157,14 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+    <script src="js/wordle.js" type="module"></script>
+
+	<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 	</body>
 </html>
